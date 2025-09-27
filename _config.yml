@@ -19,14 +19,13 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Open Data Scotland Communities
-email: contact@opendatascotland.org
+email: admin@opendata.scot
 description: >- # this means to ignore newlines until "baseurl:"
   A directory of events and communities associated with open data in Scotland.
   Discover local meetups, conferences, user groups, and organizations 
   promoting open data initiatives across Scotland.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://communities.opendata.scot" # the base hostname & protocol for your site
-twitter_username: opendatascot
 github_username: OpenDataScotland
 
 # Build settings
