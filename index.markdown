@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="hero-section">
+<div class="hero-section rounded">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-8">
@@ -12,13 +12,13 @@ layout: default
           <a href="{{ "/communities/" | relative_url }}" class="btn btn-light btn-lg me-3">
             <i class="bi bi-people"></i> Browse Communities
           </a>
-          <a href="{{ "/events/" | relative_url }}" class="btn btn-outline-light btn-lg">
+          <a href="{{ "/events/" | relative_url }}" class="btn btn-light btn-lg">
             <i class="bi bi-calendar-event"></i> View Events
           </a>
         </div>
       </div>
       <div class="col-lg-4 text-center">
-        <i class="bi bi-database" style="font-size: 8rem; opacity: 0.7;"></i>
+        <i class="bi bi-database-fill" style="font-size: 8rem; opacity: 0.7;"></i>
       </div>
     </div>
   </div>
@@ -61,7 +61,7 @@ layout: default
       {% endif %}
       
       <div class="mt-3">
-        <a href="{{ "/communities/" | relative_url }}" class="btn btn-primary">View All Communities</a>
+        <a href="{{ "/communities/" | relative_url }}" class="btn btn-outline-primary">View All Communities</a>
       </div>
     </div>
     
@@ -114,12 +114,12 @@ layout: default
       {% endif %}
       
       <div class="mt-3">
-        <a href="{{ "/events/" | relative_url }}" class="btn btn-primary">View All Events</a>
+        <a href="{{ "/events/" | relative_url }}" class="btn btn-outline-primary">View All Events</a>
       </div>
     </div>
   </div>
   
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-12">
       <div class="text-center py-5">
         <h2>Get Involved</h2>
@@ -160,5 +160,5 @@ layout: default
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>

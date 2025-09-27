@@ -11,7 +11,7 @@
   --odata-info: #0dcaf0;
 }
 
-/* Override Bootstrap primary color for Scottish theme */
+/* Override Bootstrap primary color for Scottish theme with better contrast */
 .bg-primary {
   background-color: #1e3a8a !important; /* Scottish blue */
 }
@@ -19,21 +19,29 @@
 .btn-primary {
   background-color: #1e3a8a;
   border-color: #1e3a8a;
+  color: #ffffff;
 }
 
 .btn-primary:hover {
-  background-color: #1e40af;
-  border-color: #1e40af;
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.btn-primary:focus {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 0.25rem rgba(30, 58, 138, 0.25);
 }
 
 .navbar-brand {
   font-weight: 600;
 }
 
-/* Custom hero section styling */
+/* Custom hero section styling with improved contrast */
 .hero-section {
-  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-  color: white;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #ffffff;
   padding: 4rem 0;
 }
 
@@ -41,11 +49,14 @@
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero-section .lead {
   font-size: 1.25rem;
-  opacity: 0.9;
+  color: #f1f5f9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* Card enhancements */
@@ -85,17 +96,26 @@
   font-weight: 500;
 }
 
-/* Footer enhancements */
+/* Footer enhancements with better contrast */
 footer {
   margin-top: auto;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 2rem 0;
 }
 
 footer a {
-  color: #6c757d;
+  color: #495057;
+  text-decoration: none;
 }
 
 footer a:hover {
   color: #1e3a8a;
+  text-decoration: underline;
+}
+
+footer .text-muted {
+  color: #6c757d !important;
 }
 
 /* Content styling */
@@ -114,6 +134,27 @@ footer a:hover {
   margin-bottom: 1rem;
 }
 
+/* Container fluid adjustments for better spacing */
+.container-fluid {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Better text contrast for cards */
+.card-title a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-section h1 {
@@ -127,6 +168,11 @@ footer a:hover {
   .community-grid,
   .event-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
