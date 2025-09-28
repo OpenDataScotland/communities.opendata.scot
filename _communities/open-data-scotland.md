@@ -1,6 +1,6 @@
 ---
 title: "Open Data Scotland"
-description: "AA 100% volunteer-run, collaborative community promoting open data through open source."
+description: "A 100% volunteer-run, collaborative community promoting open data through open source."
 location: "Online"
 website: "https://opendata.scot"
 contact_email: "admin@opendata.scot"
